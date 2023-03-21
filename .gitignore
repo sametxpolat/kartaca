@@ -55,3 +55,14 @@ replay_pid*
 *.rdb
 
 # endregion: Redis .gitignore
+
+# ------------------------------
+
+# region: Other
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# endregion: Other
