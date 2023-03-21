@@ -1,3 +1,5 @@
+# region: JAVA .gitignore
+
 # Compiled class file
 *.class
 
@@ -21,3 +23,35 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+replay_pid*
+
+# endregion: JAVA gitignore
+
+# ------------------------------
+
+# region: VS Code .gitignore
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# endregion: VS Code .gitignore
+
+# ------------------------------
+
+# region: Redis .gitignore
+
+# Ignore redis binary dump (dump.rdb) files
+
+*.rdb
+
+# endregion: Redis .gitignore
