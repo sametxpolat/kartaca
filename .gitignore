@@ -39,7 +39,7 @@ replay_pid*
 !.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
-.history/
+*.history/
 
 # Built Visual Studio Code Extensions
 *.vsix
@@ -58,11 +58,11 @@ replay_pid*
 
 # ------------------------------
 
-# region: Other
+# region: Other .gitignore
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-# endregion: Other
+# endregion: Other .gitignore
