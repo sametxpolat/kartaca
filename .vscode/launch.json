@@ -1,0 +1,14 @@
+{
+      "configurations": [
+            {
+                  "type": "java",
+                  "name": "Spring Boot-SoftwaredeveloperApplication<softwaredeveloper>",
+                  "request": "launch",
+                  "cwd": "${workspaceFolder}",
+                  "mainClass": "com.kartaca.softwaredeveloper.SoftwaredeveloperApplication",
+                  "projectName": "softwaredeveloper",
+                  "args": "",
+                  "envFile": "${workspaceFolder}/.env"
+            }
+      ]
+}
