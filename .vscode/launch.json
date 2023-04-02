@@ -2,6 +2,12 @@
       "configurations": [
             {
                   "type": "java",
+                  "name": "SoftwaredeveloperApplication",
+                  "request": "launch",
+                  "mainClass": "com.kartaca.softwaredeveloper.SoftwaredeveloperApplication"
+            },
+            {
+                  "type": "java",
                   "name": "Spring Boot-SoftwaredeveloperApplication<softwaredeveloper>",
                   "request": "launch",
                   "cwd": "${workspaceFolder}",
