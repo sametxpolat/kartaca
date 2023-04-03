@@ -10,6 +10,8 @@ import com.kartaca.softwaredeveloper.model.Bid;
 import com.kartaca.softwaredeveloper.repository.BidRepository;
 // import com.kartaca.softwaredeveloper.repository.LastBidRepository;
 
+import jakarta.persistence.EntityExistsException;
+
 @Service
 public class BidService {
 
@@ -27,7 +29,7 @@ public class BidService {
             BigDecimal bidPrice = bid.getPrice();
 
             if(lastBid != null && bidPrice.compareTo(lastBid.getPrice()) <= 0) {
-                  return false;
+                  throw new EntityExistsException("> err: not greater than the last bid!");
             }
 
             try {
