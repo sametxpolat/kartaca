@@ -18,9 +18,43 @@
 
 ---
 
+### Project Details
+
+```
+BACKEND;
+  Language: JAVA
+  Framework: Spring Boot
+  ORM Tool: Hibernate
+  Build Automation Tool: Maven
+
+FRONTEND;
+  React.js + Material UI
+```
+
+---
+
 ##### Not: Proje içerisinde frontend kısmı yoktur. Sadece backend yapılmıştır. Eğer test etmek isterseniz aşağıda pathler ve alacağı istek tipi yazılmıştır.
 
 ##### Not: docker-compose ayarlanmadığı için "kartaca@localhost" adında bir veri tabanı oluşturmanız gerekir. "application.properties" ve "RedisConfig.java" dökümanlarını düzenlemeniz gerekir.
+
+```
+Veri tabanı oluşturmak için;
+  CREATE DATABASE `kartaca@localhost`
+
+Proje içerisindeki MySQL kullanıcı ayarları aşağıdaki gibidir. Projeyi çalıştırmadan önce kullanıcı ile uğraşmak istemezsenin silebilir veya düzenleyebilirsiniz.
+resources > application.properties;
+  spring.datasource.url = jdbc:mysql://localhost:3306/kartaca@localhost
+  spring.datasource.username = neo
+  spring.datasource.password = 01382nN*
+
+---
+
+Proje içerisindeki REDIS ayarları aşağıdaki gibidir.
+config > RedisConfig.java;
+  host: localhost
+  port: 6379
+  password: 01382rR*
+```
 
 ##### Not: Otomatik olarak kullanıcı, kategori, ürünler, açık arttırmaya çıkarma ve teklif verilerini eklemek istiyorsanız: http://localhost:8080/optional pathine istek atmanız yeterli. Aşağıdaki örnekler veri isimlerinden oluşur.
 
