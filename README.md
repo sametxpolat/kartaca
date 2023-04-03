@@ -46,13 +46,13 @@ Giriş yapmak için: http://localhost:8080/api/v1/user/get
 
 Geri dönüş olarak aşağıdaki JSON dönmektedir. "uniqueId" REDIS için benzersiz keydir. Bir sonraki istekte sadece bu key ile REDIS Cache'ten bilgileri gelmektedir.
 {
-    "id": 1,
-    "uniqueId": "71031dc0-c29e-4a93-a353-7a3ccd9f0ae4",
-    "name": "name01",
-    "surname": "surname01",
-    "nickname": "nickname01",
-    "email": "email01@ex.com",
-    "password": null
+  "id": 1,
+  "uniqueId": "71031dc0-c29e-4a93-a353-7a3ccd9f0ae4",
+  "name": "name01",
+  "surname": "surname01",
+  "nickname": "nickname01",
+  "email": "email01@ex.com",
+  "password": null
 }
 "password" hash algoritmasından geçerek kaydedilmektedir.
 ("password": "$2a$10$cwyLZ/GEuC24n/WQ82VMOeSKj6cCBrJt3787/HxOCJSgWmMmEZTaG")
@@ -61,10 +61,10 @@ Geri dönüş olarak aşağıdaki JSON dönmektedir. "uniqueId" REDIS için benz
 Kullanıcıya ait ürünler eklemek için: http://localhost:8080/api/v1/product/set
 ```
 {
-    "name": "name01",
-    "description": "desc01",
-    "user": 1,
-    "category": 1
+  "name": "name01",
+  "description": "desc01",
+  "user": 1,
+  "category": 1
 }
 "date" default eklenmektedir.
 ```
@@ -91,8 +91,8 @@ Kullanıcıya ait ürünleri listelemek için: http://localhost:8080/api/v1/prod
 Bir ürünü açık arttırmaya çıkarmak için: http://localhost:8080/api/v1/auction/set
 ```
 {
-    "startPrice": 500,
-    "product": 1
+  "startPrice": 500,
+  "product": 1
 }
 İsterseniz "finishDate" ekleyebilirsiniz. "status" default olarak "true", "startDate" default eklenmektedir.
 ```
@@ -126,9 +126,9 @@ Açık arttırmadaki ürünleri görmek için: http://localhost:8080/api/v1/auct
 Bir ürüne teklif vermek için: http://localhost:8080/api/v1/bid/set
 ```
 {
-    "price": 800,
-    "auction": 1,
-    "user": 3
+  "price": 800,
+  "auction": 1,
+  "user": 3
 }
 Sadece ürüne ait son tekliften yüksek teklifler geçerlidir. Diğer durumlarda hata mesajı döndürür.
 ```
@@ -137,9 +137,9 @@ Sadece ürüne ait son tekliften yüksek teklifler geçerlidir. Diğer durumlard
 
 #### Document Information
 ```
-  {
-    "type": "INFO",
-    "createDate": "21.03.2023",
-    "format": "MarkDown (.md)"
-  }
+{
+  "type": "INFO",
+  "createDate": "21.03.2023",
+  "format": "MarkDown (.md)"
+}
 ```
